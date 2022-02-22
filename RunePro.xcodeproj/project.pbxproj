@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720AF42727B2ECA3008557BE /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720AF42627B2ECA3008557BE /* Skill.swift */; };
+		720D9F6E27C444C4005D3104 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D9F6D27C444C4005D3104 /* SearchField.swift */; };
+		7230B6AC27AF39FD00EE37F9 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */; };
+		723E05F927AE5024003052E5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E05F827AE5024003052E5 /* Player.swift */; };
+		727E999F27B24229009EA04E /* StatTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E999E27B24229009EA04E /* StatTileView.swift */; };
+		727F228C27AE48A20080B1C2 /* RuneProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F228B27AE48A20080B1C2 /* RuneProApp.swift */; };
+		727F228E27AE48A20080B1C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F228D27AE48A20080B1C2 /* ContentView.swift */; };
+		727F229027AE48A40080B1C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727F228F27AE48A40080B1C2 /* Assets.xcassets */; };
+		727F229327AE48A40080B1C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727F229227AE48A40080B1C2 /* Preview Assets.xcassets */; };
+		727FE9D027B451250043589B /* HiScoreLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727FE9CF27B451250043589B /* HiScoreLoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		720AF42627B2ECA3008557BE /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		720D9F6D27C444C4005D3104 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		723E05F827AE5024003052E5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		727E999E27B24229009EA04E /* StatTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTileView.swift; sourceTree = "<group>"; };
+		727F228827AE48A20080B1C2 /* RunePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		727F228B27AE48A20080B1C2 /* RuneProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneProApp.swift; sourceTree = "<group>"; };
+		727F228D27AE48A20080B1C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		727F228F27AE48A40080B1C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		727F229227AE48A40080B1C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		727FE9CF27B451250043589B /* HiScoreLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiScoreLoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		727F228527AE48A20080B1C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727E999927B204A0009EA04E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				727F228D27AE48A20080B1C2 /* ContentView.swift */,
+				720D9F6D27C444C4005D3104 /* SearchField.swift */,
+				727FE9CF27B451250043589B /* HiScoreLoadingView.swift */,
+				727E999E27B24229009EA04E /* StatTileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		727E999A27B204A8009EA04E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		727E999B27B204B0009EA04E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				723E05F827AE5024003052E5 /* Player.swift */,
+				720AF42627B2ECA3008557BE /* Skill.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		727F227F27AE48A20080B1C2 = {
+			isa = PBXGroup;
+			children = (
+				727F228A27AE48A20080B1C2 /* RunePro */,
+				727F228927AE48A20080B1C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		727F228927AE48A20080B1C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				727F228827AE48A20080B1C2 /* RunePro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		727F228A27AE48A20080B1C2 /* RunePro */ = {
+			isa = PBXGroup;
+			children = (
+				727E999B27B204B0009EA04E /* Models */,
+				727E999A27B204A8009EA04E /* ViewModels */,
+				727E999927B204A0009EA04E /* Views */,
+				727F228B27AE48A20080B1C2 /* RuneProApp.swift */,
+				727F228F27AE48A40080B1C2 /* Assets.xcassets */,
+				727F229127AE48A40080B1C2 /* Preview Content */,
+			);
+			path = RunePro;
+			sourceTree = "<group>";
+		};
+		727F229127AE48A40080B1C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				727F229227AE48A40080B1C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		727F228727AE48A20080B1C2 /* RunePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727F229627AE48A40080B1C2 /* Build configuration list for PBXNativeTarget "RunePro" */;
+			buildPhases = (
+				727F228427AE48A20080B1C2 /* Sources */,
+				727F228527AE48A20080B1C2 /* Frameworks */,
+				727F228627AE48A20080B1C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunePro;
+			productName = RunePro;
+			productReference = 727F228827AE48A20080B1C2 /* RunePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		727F228027AE48A20080B1C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					727F228727AE48A20080B1C2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 727F228327AE48A20080B1C2 /* Build configuration list for PBXProject "RunePro" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 727F227F27AE48A20080B1C2;
+			productRefGroup = 727F228927AE48A20080B1C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				727F228727AE48A20080B1C2 /* RunePro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		727F228627AE48A20080B1C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727F229327AE48A40080B1C2 /* Preview Assets.xcassets in Resources */,
+				727F229027AE48A40080B1C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727F228427AE48A20080B1C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727FE9D027B451250043589B /* HiScoreLoadingView.swift in Sources */,
+				720AF42727B2ECA3008557BE /* Skill.swift in Sources */,
+				727F228E27AE48A20080B1C2 /* ContentView.swift in Sources */,
+				723E05F927AE5024003052E5 /* Player.swift in Sources */,
+				727E999F27B24229009EA04E /* StatTileView.swift in Sources */,
+				727F228C27AE48A20080B1C2 /* RuneProApp.swift in Sources */,
+				720D9F6E27C444C4005D3104 /* SearchField.swift in Sources */,
+				7230B6AC27AF39FD00EE37F9 /* PlayerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		727F229427AE48A40080B1C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		727F229527AE48A40080B1C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		727F229727AE48A40080B1C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RunePro/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KF5K6QRM5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.hgreen.RunePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		727F229827AE48A40080B1C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RunePro/Preview Content\"";
+				DEVELOPMENT_TEAM = 8KF5K6QRM5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.hgreen.RunePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		727F228327AE48A20080B1C2 /* Build configuration list for PBXProject "RunePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727F229427AE48A40080B1C2 /* Debug */,
+				727F229527AE48A40080B1C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727F229627AE48A40080B1C2 /* Build configuration list for PBXNativeTarget "RunePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727F229727AE48A40080B1C2 /* Debug */,
+				727F229827AE48A40080B1C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 727F228027AE48A20080B1C2 /* Project object */;
+}
