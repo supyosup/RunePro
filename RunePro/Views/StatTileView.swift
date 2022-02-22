@@ -25,9 +25,9 @@ struct StatTileView: View {
                
 
                 ScrollView() {
-                    Button("Back") {
-                        buttonPressed = true
-                    }
+//                    Button("Back") {
+//                        buttonPressed = true
+//                    }
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
                         ForEach(player.skills.indices) { i in
                             SkillTileView(

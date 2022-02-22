@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		720AF42727B2ECA3008557BE /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720AF42627B2ECA3008557BE /* Skill.swift */; };
 		720D9F6E27C444C4005D3104 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D9F6D27C444C4005D3104 /* SearchField.swift */; };
+		720D9F7627C4D094005D3104 /* LookupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 720D9F7427C4D094005D3104 /* LookupScreen.png */; };
+		720D9F7727C4D094005D3104 /* StatScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 720D9F7527C4D094005D3104 /* StatScreen.png */; };
 		7230B6AC27AF39FD00EE37F9 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */; };
 		723E05F927AE5024003052E5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E05F827AE5024003052E5 /* Player.swift */; };
 		727E999F27B24229009EA04E /* StatTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E999E27B24229009EA04E /* StatTileView.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		720AF42627B2ECA3008557BE /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		720D9F6D27C444C4005D3104 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		720D9F7427C4D094005D3104 /* LookupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LookupScreen.png; sourceTree = "<group>"; };
+		720D9F7527C4D094005D3104 /* StatScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatScreen.png; sourceTree = "<group>"; };
 		7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		723E05F827AE5024003052E5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		727E999E27B24229009EA04E /* StatTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTileView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720D9F7327C4D088005D3104 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				720D9F7427C4D094005D3104 /* LookupScreen.png */,
+				720D9F7527C4D094005D3104 /* StatScreen.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		727E999927B204A0009EA04E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 		727F228A27AE48A20080B1C2 /* RunePro */ = {
 			isa = PBXGroup;
 			children = (
+				720D9F7327C4D088005D3104 /* Screenshots */,
 				727E999B27B204B0009EA04E /* Models */,
 				727E999A27B204A8009EA04E /* ViewModels */,
 				727E999927B204A0009EA04E /* Views */,
@@ -168,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				727F229327AE48A40080B1C2 /* Preview Assets.xcassets in Resources */,
+				720D9F7727C4D094005D3104 /* StatScreen.png in Resources */,
 				727F229027AE48A40080B1C2 /* Assets.xcassets in Resources */,
+				720D9F7627C4D094005D3104 /* LookupScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

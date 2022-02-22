@@ -44,7 +44,22 @@ struct ContentView: View {
                     }
                     .padding()
                 }
-                    
+                    Button("Get Stats") {
+                                                        player.updateName(username)
+                                                        Task.init {
+                                                            let playerData = await player.getPlayerStats()
+                                                            player.updateStats(playerData)
+                                                            player.parsePlayerStats()
+                                                            dataLoaded = true
+                                                        }
+                                                        switchView = true
+                                                    }
+                                                        .disabled(username.isEmpty)
+                                                        .foregroundColor(.red)
+                                                        .background(Color.blue)
+                                                        .cornerRadius(8.0)
+                                                        .scaleEffect(1.5)
+                                                        .padding()
             }
             }
         }.preferredColorScheme(.dark)
