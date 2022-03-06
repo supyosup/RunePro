@@ -11,4 +11,4 @@
 ![Alt text](/RunePro/Screenshots/Lookup.gif?raw=true)
 
 ## User Stats
-![Alt text](/RunePro/Screenshots/Stats.gif?raw=true)
+![Alt text](/RunePro/Screenshots/StatScreen.png?raw=true)
