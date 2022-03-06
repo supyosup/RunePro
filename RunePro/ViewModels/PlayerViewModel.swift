@@ -22,7 +22,7 @@ import SwiftUI
     var printData: String {
         return "Player data: \(player.playerData)"
     }
-        
+    
     var skills: [Skill] {
         player.playerSkills
     }
@@ -32,20 +32,18 @@ import SwiftUI
     }
     
     func updateName(_ name: String) {
-//        Debug
-//        print("Updating name to \(name)")
         player.playerName = name.capitalized
     }
     
     func updateStats(_ stats: String) {
         player.playerData = stats
     }
-
+    
     func parsePlayerStats() {
-        // rank,level,xp
-        if (self.name == "_notFound") {
+        if (self.name == "#notfound") {
             return
         }
+        
         let lines = self.stats.components(separatedBy: "\n")
         for i in 0..<24 {
             let components = lines[i].components(separatedBy: ",")
@@ -89,7 +87,7 @@ import SwiftUI
             player.playerSkills[index].xp = 0
         } else {
             player.playerSkills[index].xp = xp
-
+            
         }
     }
     
@@ -107,7 +105,7 @@ import SwiftUI
             let (data, _) = try await URLSession.shared.data(from: queryUrl)
             let returnedData = String(decoding: data, as: UTF8.self)
             if (returnedData.contains("Page not found")) {
-                player.playerName = "_notFound"
+                player.playerName = "#notfound"
                 return "User not found"
             }
             return (String (decoding: data, as: UTF8.self))

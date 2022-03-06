@@ -8,7 +8,7 @@
 # Screenshots
 
 ## User Lookup
-![Alt text](/RunePro/Screenshots/LookupScreen.png?raw=true)
+![Alt text](/RunePro/Screenshots/Lookup.gif?raw=true)
 
 ## User Stats
-![Alt text](/RunePro/Screenshots/StatScreen.png?raw=true)
+![Alt text](/RunePro/Screenshots/Stats.gif?raw=true)

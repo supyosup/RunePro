@@ -14,37 +14,26 @@ import SwiftUI
 
 struct StatTileView: View {
     @ObservedObject var player: PlayerViewModel
-
-    @State var buttonPressed = false
     
     var body: some View {
-        if (buttonPressed) {
-            ContentView()
-        } else {
-            VStack {
-               
-
-                ScrollView() {
-//                    Button("Back") {
-//                        buttonPressed = true
-//                    }
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                        ForEach(player.skills.indices) { i in
-                            SkillTileView(
-                                skill: player.skills[i].name,
-                                level: Int(player.skills[i].level),
-                                xp: Int(player.skills[i].xp),
-                                rank: Int(player.skills[i].rank),
-                                sprite: player.skills[i].sprite
-                            )
+        VStack {
+            ScrollView() {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+                    ForEach(player.skills.indices) { i in
+                        SkillTileView(
+                            skill: player.skills[i].name,
+                            level: Int(player.skills[i].level),
+                            xp: Int(player.skills[i].xp),
+                            rank: Int(player.skills[i].rank),
+                            sprite: player.skills[i].sprite
+                        )
                             .aspectRatio(2/2.25, contentMode: .fit)
-                        }
                     }
-                    .padding()
                 }
-                .navigationTitle(player.name)
-                .preferredColorScheme(.dark)
+                .padding()
             }
+            .navigationTitle(player.name)
+            .preferredColorScheme(.dark)
         }
     }
 }
@@ -62,18 +51,18 @@ struct SkillTileView: View {
             shape.fill().foregroundColor(Color(white: 0.3745))
             shape.strokeBorder(lineWidth: 3)
             VStack {
-                Image(uiImage: sprite)
                 VStack {
                     Text("\(skill)")
-                    Text("\(level)")
-                    Text("\(xp)")
+                    Image(uiImage: sprite)
+                    Text("Lvl: \(level)")
                     Text("Rank: \(rank)")
+                    Text("Exp: \(xp)")
                 }
-                    .font(.custom("small", size: 0.45))
+                .font(.custom("small", size: 0.45))
             }
         }
-            .foregroundColor(.yellow)
-            .preferredColorScheme(.dark)
+        .foregroundColor(.yellow)
+        .preferredColorScheme(.dark)
     }
 }
 
