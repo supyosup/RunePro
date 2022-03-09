@@ -1,6 +1,6 @@
 # RunePro
 	RunePro is an app targeted towards players of Old School Runescape. 
-	I mostly work on it during the weekends or late nights as you can see by the timestamps in the screenshots.
+	It's a side project I started because I love the game.
 
 ## Features
 	Currently RunePro features a HiScore lookup for users to display their stats.
