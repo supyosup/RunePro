@@ -39,9 +39,10 @@ import SwiftUI
         player.playerData = stats
     }
     
-    func parsePlayerStats() {
+    func parsePlayerStats() -> Bool {
+        print("Parsing...")
         if (self.name == "#notfound") {
-            return
+            return true
         }
         
         let lines = self.stats.components(separatedBy: "\n")
@@ -68,6 +69,7 @@ import SwiftUI
             }
             setSkill(index: i, rank: Int(rank)!, level: Int(level)!, xp: Int(xp)!)
         }
+        return false
     }
     
     func setSkill(index: Int, rank: Int, level: Int, xp: Int) {

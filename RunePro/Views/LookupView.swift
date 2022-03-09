@@ -12,6 +12,7 @@ struct LookupView: View {
     @State var username = ""
     @State var dataLoaded: Bool? = false
     @State var isLoading = false
+    @State var playerNotFound = false
     
     var body: some View {
         NavigationView {
@@ -38,6 +39,7 @@ struct LookupView: View {
                         }
                         .padding()
                     }
+                    
                     NavigationLink(destination: StatTileView(player: player)
                                     .transition(.move(edge: .leading).animation(.default))
                                    , tag: true, selection: $dataLoaded, label: {
@@ -52,12 +54,18 @@ struct LookupView: View {
                                 self.fetchPlayerData()
                             }
                     })
+                        .alert(isPresented: $playerNotFound) {
+                            UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).backgroundColor = .darkGray
+                            UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = .red
+                            return Alert(title: Text("Player not found"), message: Text("Player was not found on the HiScores."), dismissButton: .default(Text("OK")))
+                        }
                         .navigationBarTitle("Lookup")
                         .navigationBarHidden(true)
                 }
                 
             }
-        }.preferredColorScheme(.dark)
+        }
+        .preferredColorScheme(.dark)
     }
     
     func fetchPlayerData() {
@@ -66,7 +74,7 @@ struct LookupView: View {
             isLoading = true
             let playerData = await player.getPlayerStats()
             player.updateStats(playerData)
-            player.parsePlayerStats()
+            playerNotFound = player.parsePlayerStats()
             dataLoaded = true
             isLoading = false
         }

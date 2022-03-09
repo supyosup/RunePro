@@ -19,6 +19,7 @@
 		727F229027AE48A40080B1C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727F228F27AE48A40080B1C2 /* Assets.xcassets */; };
 		727F229327AE48A40080B1C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727F229227AE48A40080B1C2 /* Preview Assets.xcassets */; };
 		727FE9D027B451250043589B /* HiScoreLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727FE9CF27B451250043589B /* HiScoreLoadingView.swift */; };
+		72FE158127D740A300591254 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE158027D740A300591254 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		727F228F27AE48A40080B1C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727F229227AE48A40080B1C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		727FE9CF27B451250043589B /* HiScoreLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiScoreLoadingView.swift; sourceTree = "<group>"; };
+		72FE158027D740A300591254 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				720D9F6D27C444C4005D3104 /* SearchField.swift */,
 				727FE9CF27B451250043589B /* HiScoreLoadingView.swift */,
 				727E999E27B24229009EA04E /* StatTileView.swift */,
+				72FE158027D740A300591254 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				722DAAC427D4831B00C75BC5 /* LookupView.swift in Sources */,
 				727FE9D027B451250043589B /* HiScoreLoadingView.swift in Sources */,
 				720AF42727B2ECA3008557BE /* Skill.swift in Sources */,
+				72FE158127D740A300591254 /* HomeView.swift in Sources */,
 				727F228E27AE48A20080B1C2 /* ContentView.swift in Sources */,
 				723E05F927AE5024003052E5 /* Player.swift in Sources */,
 				727E999F27B24229009EA04E /* StatTileView.swift in Sources */,
