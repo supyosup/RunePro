@@ -19,7 +19,7 @@ struct Quest {
         }
     }
     
-    func getJsonData() -> QuestSection {
+    func getJsonData() -> [QuestSection] {
         guard let sourcesURL = Bundle.main.url(forResource: "QuestData", withExtension: "json")
         else {
             fatalError("Could not find QuestData.json")
@@ -33,13 +33,9 @@ struct Quest {
         
         let decoder = JSONDecoder()
         
-        guard let questTypes = try? decoder.decode(QuestSection.self, from: questData)
+        guard let questTypes = try? decoder.decode([QuestSection].self, from: questData)
         else {
             fatalError("There was a problem decoding data")
-        }
-        print(questTypes.name)
-        for quest in questTypes.quests {
-            print(quest.name)
         }
         
         return questTypes

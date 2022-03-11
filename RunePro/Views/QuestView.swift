@@ -14,11 +14,14 @@ struct QuestView: View {
     var body: some View {
         NavigationView {
             List {
-                Section {
-                    ForEach (questsData.quests) { quest in
-                        Text(quest.name)
+                ForEach (questsData) { type in
+                    Section(header: Text(type.name)) {
+                        ForEach (type.quests) { quest in
+                            Text(quest.name)
+                        }
                     }
                 }
+                
             }
             .navigationTitle("Quest List")
         }

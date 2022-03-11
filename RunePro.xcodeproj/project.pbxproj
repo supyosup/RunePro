@@ -62,6 +62,14 @@
 			path = Screenshots;
 			sourceTree = "<group>";
 		};
+		721CD63127DC0D4E00F849BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				72376F7A27DAFF300088B4EE /* QuestData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		727E999927B204A0009EA04E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +120,7 @@
 		727F228A27AE48A20080B1C2 /* RunePro */ = {
 			isa = PBXGroup;
 			children = (
-				72376F7A27DAFF300088B4EE /* QuestData.json */,
+				721CD63127DC0D4E00F849BB /* Data */,
 				720D9F7327C4D088005D3104 /* Screenshots */,
 				727E999B27B204B0009EA04E /* Models */,
 				727E999A27B204A8009EA04E /* ViewModels */,
