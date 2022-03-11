@@ -1,0 +1,17 @@
+
+    {
+        "name": "Free Quests",
+        "id": "e0ad0c0c-a0f2-11ec-b909-0242ac120002",
+        "quests": [
+            {
+                "id": "e0ad0c0c-a0f2-11ec-b909-0242ac120002",
+                "name": "Cook's Assistant"
+            },
+            
+            {
+                "id": "e0ad197c-a0f2-11ec-b909-0242ac120002",
+                "name": "Prince Ali Rescue"
+            }
+        ]
+    }
+

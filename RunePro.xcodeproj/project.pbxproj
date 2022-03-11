@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		720AF42727B2ECA3008557BE /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720AF42627B2ECA3008557BE /* Skill.swift */; };
-		720D9F6E27C444C4005D3104 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D9F6D27C444C4005D3104 /* SearchField.swift */; };
 		720D9F7727C4D094005D3104 /* StatScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 720D9F7527C4D094005D3104 /* StatScreen.png */; };
 		722DAAC427D4831B00C75BC5 /* LookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722DAAC327D4831B00C75BC5 /* LookupView.swift */; };
 		7230B6AC27AF39FD00EE37F9 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */; };
+		7235735D27D94FDE00E4D9C2 /* QuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235735C27D94FDE00E4D9C2 /* QuestView.swift */; };
+		72376F7B27DAFF300088B4EE /* QuestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 72376F7A27DAFF300088B4EE /* QuestData.json */; };
+		72376F7D27DB25220088B4EE /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72376F7C27DB25220088B4EE /* Quest.swift */; };
 		723E05F927AE5024003052E5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723E05F827AE5024003052E5 /* Player.swift */; };
 		727E999F27B24229009EA04E /* StatTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E999E27B24229009EA04E /* StatTileView.swift */; };
 		727F228C27AE48A20080B1C2 /* RuneProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F228B27AE48A20080B1C2 /* RuneProApp.swift */; };
@@ -24,10 +26,12 @@
 
 /* Begin PBXFileReference section */
 		720AF42627B2ECA3008557BE /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
-		720D9F6D27C444C4005D3104 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		720D9F7527C4D094005D3104 /* StatScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatScreen.png; sourceTree = "<group>"; };
 		722DAAC327D4831B00C75BC5 /* LookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupView.swift; sourceTree = "<group>"; };
 		7230B6AB27AF39FD00EE37F9 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		7235735C27D94FDE00E4D9C2 /* QuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestView.swift; sourceTree = "<group>"; };
+		72376F7A27DAFF300088B4EE /* QuestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestData.json; sourceTree = "<group>"; };
+		72376F7C27DB25220088B4EE /* Quest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quest.swift; path = RunePro/ViewModels/Quest.swift; sourceTree = SOURCE_ROOT; };
 		723E05F827AE5024003052E5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		727E999E27B24229009EA04E /* StatTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTileView.swift; sourceTree = "<group>"; };
 		727F228827AE48A20080B1C2 /* RunePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +67,7 @@
 			children = (
 				722DAAC327D4831B00C75BC5 /* LookupView.swift */,
 				727F228D27AE48A20080B1C2 /* ContentView.swift */,
-				720D9F6D27C444C4005D3104 /* SearchField.swift */,
+				7235735C27D94FDE00E4D9C2 /* QuestView.swift */,
 				727FE9CF27B451250043589B /* HiScoreLoadingView.swift */,
 				727E999E27B24229009EA04E /* StatTileView.swift */,
 				72FE158027D740A300591254 /* HomeView.swift */,
@@ -82,6 +86,7 @@
 		727E999B27B204B0009EA04E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				72376F7C27DB25220088B4EE /* Quest.swift */,
 				723E05F827AE5024003052E5 /* Player.swift */,
 				720AF42627B2ECA3008557BE /* Skill.swift */,
 			);
@@ -107,6 +112,7 @@
 		727F228A27AE48A20080B1C2 /* RunePro */ = {
 			isa = PBXGroup;
 			children = (
+				72376F7A27DAFF300088B4EE /* QuestData.json */,
 				720D9F7327C4D088005D3104 /* Screenshots */,
 				727E999B27B204B0009EA04E /* Models */,
 				727E999A27B204A8009EA04E /* ViewModels */,
@@ -186,6 +192,7 @@
 			files = (
 				727F229327AE48A40080B1C2 /* Preview Assets.xcassets in Resources */,
 				720D9F7727C4D094005D3104 /* StatScreen.png in Resources */,
+				72376F7B27DAFF300088B4EE /* QuestData.json in Resources */,
 				727F229027AE48A40080B1C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,12 +207,13 @@
 				722DAAC427D4831B00C75BC5 /* LookupView.swift in Sources */,
 				727FE9D027B451250043589B /* HiScoreLoadingView.swift in Sources */,
 				720AF42727B2ECA3008557BE /* Skill.swift in Sources */,
+				7235735D27D94FDE00E4D9C2 /* QuestView.swift in Sources */,
 				72FE158127D740A300591254 /* HomeView.swift in Sources */,
+				72376F7D27DB25220088B4EE /* Quest.swift in Sources */,
 				727F228E27AE48A20080B1C2 /* ContentView.swift in Sources */,
 				723E05F927AE5024003052E5 /* Player.swift in Sources */,
 				727E999F27B24229009EA04E /* StatTileView.swift in Sources */,
 				727F228C27AE48A20080B1C2 /* RuneProApp.swift in Sources */,
-				720D9F6E27C444C4005D3104 /* SearchField.swift in Sources */,
 				7230B6AC27AF39FD00EE37F9 /* PlayerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
