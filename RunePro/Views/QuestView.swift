@@ -21,7 +21,6 @@ struct QuestView: View {
                         }
                     }
                 }
-                
             }
             .navigationTitle("Quest List")
         }

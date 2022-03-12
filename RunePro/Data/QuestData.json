@@ -4,13 +4,84 @@
         "id": "e0ad0c0c-a0f2-11ec-b909-0242ac120002",
         "quests": [
             {
-                "id": "e0ad0c0c-a0f2-11ec-b909-0242ac120002",
+                "id": "cfd36f0e-a1c2-11ec-b909-0242ac120002",
+                "name": "Black Knights' Fortress"
+            },
+            {
+                "id": "cfd371f2-a1c2-11ec-b909-0242ac120002",
                 "name": "Cook's Assistant"
             },
-            
             {
-                "id": "e0ad197c-a0f2-11ec-b909-0242ac120002",
+                "id": "cfd373d2-a1c2-11ec-b909-0242ac120002",
+                "name": "The Corsair Curse"
+            },
+            {
+                "id": "cfd3759e-a1c2-11ec-b909-0242ac120002",
+                "name": "Demon Slayer"
+            },
+            {
+                "id": "cfd37724-a1c2-11ec-b909-0242ac120002",
+                "name": "Doric's Quest"
+            },
+            {
+                "id": "cfd378d2-a1c2-11ec-b909-0242ac120002",
+                "name": "Dragon Slayer"
+            },
+            {
+                "id": "cfd38020-a1c2-11ec-b909-0242ac120002",
+                "name": "Ernest the Chicken"
+            },
+            {
+                "id": "cfd38278-a1c2-11ec-b909-0242ac120002",
+                "name": "Goblin Diplomacy"
+            },
+            {
+                "id": "cfd38444-a1c2-11ec-b909-0242ac120002",
+                "name": "Imp Catcher"
+            },
+            {
+                "id": "cfd3861a-a1c2-11ec-b909-0242ac120002",
+                "name": "The Knight's Sword"
+            },
+            {
+                "id": "cfd387be-a1c2-11ec-b909-0242ac120002",
+                "name": "Misthalin Mystery"
+            },
+            {
+                "id": "cfd3896c-a1c2-11ec-b909-0242ac120002",
+                "name": "Pirate's Treasure"
+            },
+            {
+                "id": "cfd38b06-a1c2-11ec-b909-0242ac120002",
                 "name": "Prince Ali Rescue"
+            },
+            {
+                "id": "cfd38ffc-a1c2-11ec-b909-0242ac120002",
+                "name": "The Restless Ghost"
+            },
+            {
+                "id": "cfd391f0-a1c2-11ec-b909-0242ac120002",
+                "name": "Romeo & Juliet"
+            },
+            {
+                "id": "cfd39394-a1c2-11ec-b909-0242ac120002",
+                "name": "Rune Mysteries"
+            },
+            {
+                "id": "cfd394d4-a1c2-11ec-b909-0242ac120002",
+                "name": "Sheep Shearer"
+            },
+            {
+                "id": "cfd3960a-a1c2-11ec-b909-0242ac120002",
+                "name": "Shield of Arrav"
+            },
+            {
+                "id": "cfd39736-a1c2-11ec-b909-0242ac120002",
+                "name": "Vampire Slayer"
+            },
+            {
+                "id": "cfd3984e-a1c2-11ec-b909-0242ac120002",
+                "name": "Witch's Potion"
             }
         ]
     },
