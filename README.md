@@ -8,12 +8,10 @@
 
 # Screenshots
 
-## User Stats
-![Alt text](/RunePro/Screenshots/StatScreen.png?raw=true)
-
 ## User Lookup
 ![Alt text](/RunePro/Screenshots/Lookup.png?raw=true)
 ![Alt text](/RunePro/Screenshots/Loading.png?raw=true)
+![Alt text](/RunePro/Screenshots/StatScreen.png?raw=true)
 
 ## Quest List
 ![Alt text](/RunePro/Screenshots/QuestList.png?raw=true)
