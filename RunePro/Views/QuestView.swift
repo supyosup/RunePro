@@ -10,6 +10,7 @@ import SafariServices
 
 struct QuestView: View {
     let questsData = Quest().getJsonData()
+    @State private var showFreeQuests = true
     
     var body: some View {
         NavigationView {
@@ -17,12 +18,15 @@ struct QuestView: View {
                 ForEach (questsData) { type in
                     Section(header: Text(type.name)) {
                         ForEach (type.quests) { quest in
-                            Text(quest.name)
+                            Link(destination: URL(string: quest.URL)!, label: {
+                                Label(quest.name, systemImage: "link")
+                            })
                         }
                     }
                 }
             }
             .navigationTitle("Quest List")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .preferredColorScheme(.dark)
     }

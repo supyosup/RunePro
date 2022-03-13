@@ -9,13 +9,14 @@ import Foundation
 
 struct Quest {
     struct QuestSection: Codable, Identifiable {
-        var id: String
+        var id: UUID
         var name: String
         var quests: [QuestItems]
         
         struct QuestItems: Codable, Identifiable {
-            var id: String
+            var id: UUID
             var name: String
+            var URL: String
         }
     }
     
@@ -23,7 +24,6 @@ struct Quest {
         guard let sourcesURL = Bundle.main.url(forResource: "QuestData", withExtension: "json")
         else {
             fatalError("Could not find QuestData.json")
-            
         }
         
         guard let questData = try? Data(contentsOf: sourcesURL)
