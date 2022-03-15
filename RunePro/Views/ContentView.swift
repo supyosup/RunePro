@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var lookupHome = UUID()
-    @State private var tabSelection = 1
+    @State private var tabSelection = 0
     @State private var tappedTwice = false
     
     var handler: Binding<Int> { Binding(
@@ -27,7 +27,7 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
-                }
+                }.tag(0)
             
             LookupView()
                 .id(lookupHome)
@@ -36,15 +36,32 @@ struct ContentView: View {
                     lookupHome = UUID()
                     self.tappedTwice = false
                 })
+                .navigationViewStyle(StackNavigationViewStyle())
                 .tabItem {
                     Label("Lookup", systemImage: "magnifyingglass")
                 }.tag(1)
             
-            SearchField()
+            QuestView()
+                .navigationViewStyle(StackNavigationViewStyle())
+
                 .tabItem {
                     Label("Quests", systemImage: "checkmark")
-                }
+                }.tag(2)
         }
+        .accentColor(.yellow)
+    }
+}
+
+extension UITabBarController {
+    override open func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let standardAppearance = UITabBarAppearance()
+
+        standardAppearance.backgroundColor = .red
+        standardAppearance.shadowColor = .green
+        standardAppearance.backgroundImage = UIImage(named: "texture")
+
+        tabBar.standardAppearance = standardAppearance
     }
 }
 
