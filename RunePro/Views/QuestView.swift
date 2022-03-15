@@ -10,7 +10,7 @@ import SafariServices
 
 struct QuestView: View {
     let questsData = Quest().getJsonData()
-    @State private var showFreeQuests = true
+    @State var showFreeQuests = true
     
     var body: some View {
         NavigationView {
